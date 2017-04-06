@@ -37,34 +37,38 @@ body,html{
 	display:block;
 }
 
-.user{
-	position:absolute;
-	bottom:10px;
-	right:10px;
-	height:40px;
-	width:100px;
-	color:white;
-	text-align:right;
+
+
+.userinfo{
+	list-style:none;
+	text-align:center;
+	line-height:30px;
 
 }
 
+ul li{
+	height:30px;
+	text-decoration:underline;
+	width:auto;
+}
 .aside{
 	margin:0px 10px;
 	position:fixed;
 	left:0;
 	width:200px;
-	height:500px;
+	height:70%;
 	border:3px solid #666;
 
 	text-align:center;
 	color:white;
 	background-color: #aaa;
+	overflow:auto;
 }
 
 .aside *{
-		width:160px;
+		width:auto;
 		margin:10px auto;
-		border-bottom:2px solid #999;
+		
 }
 .messagebox{
 	/*border:3px solid red;*/
