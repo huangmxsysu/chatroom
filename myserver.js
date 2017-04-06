@@ -27,13 +27,17 @@ var getColor=function(){
 }
 
 
+
+
+
 //WebSocket连接监听
 
 io.on('connection', function (socket) {
   socket.emit('open');//通知客户端已连接
+  console.log('成功连接');
   // console.log(socket.request);
   // console.log("=====================");
-  console.log(socket.request.headers);
+  //console.log(socket.request.headers);
   // 构造客户端对象
   var client = {
     socket:socket,
@@ -45,8 +49,8 @@ io.on('connection', function (socket) {
   	// console.log("===========message==========");
 
   	// console.log(socket.request);
-  console.log("=====================");
-  console.log(socket.request.headers);
+  //console.log("=====================");
+  //console.log(socket.request.headers);
   	var obj = { time:getTime() , color:client.color };
 
   	if(!client.name){
@@ -125,7 +129,7 @@ if (app.get('env') === 'development') {
 
 // 指定webscoket的客户端的html文件
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname,'views/index.html'));
+  res.sendFile(path.join(__dirname,'views/chatroom.html'));
 });
 
 server.listen(app.get('port'), function(){

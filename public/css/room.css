@@ -1,0 +1,190 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body,html{
+	height:100%;
+}
+
+.chatroom{
+	width:100%;
+	
+}
+.headers,.footers{
+	left:0;
+	width:100%;
+	font-size:2em;
+	text-align:center;
+	color:white;
+	background-color: #666;
+	position: absolute;
+}
+.headers{	
+	top:0;
+	height:48px;
+	line-height:48px;
+	}
+
+.footers{
+	bottom:0;
+	height:96px;
+	line-height:96px;
+}
+
+.footers{
+	font-size:0em;
+	display:block;
+}
+
+.user{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	height:40px;
+	width:100px;
+	color:white;
+	text-align:right;
+
+}
+
+.aside{
+	margin:0px 10px;
+	position:fixed;
+	left:0;
+	width:200px;
+	height:500px;
+	border:3px solid #666;
+
+	text-align:center;
+	color:white;
+	background-color: #aaa;
+}
+
+.aside *{
+		width:160px;
+		margin:10px auto;
+		border-bottom:2px solid #999;
+}
+.messagebox{
+	/*border:3px solid red;*/
+	margin-top:58px;
+	position:absolute;
+	width:100%;
+	height:85%;/*重点*/
+	overflow:auto;
+	
+}
+.aside{
+
+	}
+.message{
+	margin:58px 10px;
+	min-height:500px;	
+	/*border:3px solid #666;
+*/	margin-left:220px;
+	overflow:auto;
+
+}
+
+#system{
+	
+	position:relative;
+	height:25px;
+	text-align:center;
+	line-height:28px;
+	color:#aaa;
+	width:auto;
+	border-radius: 5px;
+}
+
+#system p{
+	margin:2px 15px;
+}
+
+
+#others , #myself{
+	position:relative;
+	
+	height:34px;
+	border:1px solid #eee;
+	margin:10px 10px;
+	
+}
+
+#img{
+	line-height:30px;
+	text-align:center;
+	position:absolute;
+	display:inline-block;
+	margin:2px 0px;
+	height:30px;
+	width:30px;
+	border:1px solid #666;
+}
+#myself #img{
+	right:0;
+}
+
+#content{
+	position:absolute;
+	display:inline-block;
+	margin:2px 0px;
+	background:#aaa;
+	width:auto;
+	text-align:center;
+	height:30px;
+	line-height:24px;
+	color:white;
+	border:1px solid #aaa;
+	border-radius:5px; /* 圆角 */
+}
+
+#content p{
+	margin:3px 10px;
+}
+#others #content{
+	left:46px;}
+
+#myself #content{
+
+	right:46px;
+}
+
+#triangle-left,#triangle-right{
+display:inline-block;
+position:absolute;
+z-index:-1;
+top:50%;
+margin-top:-8px;
+width:0;
+height:0;
+font-size:0;
+border:solid 8px;
+border-color:#fff  #aaa #fff #fff;
+}
+#triangle-left{
+	left:30px;
+}
+#triangle-right{
+right:30px;
+border-color:#fff  #fff #fff #aaa;
+}
+
+/*#others{
+	margin-left:20px;
+}*/
+
+
+
+
+
+#input{
+	margin:8px auto;	
+	font-size:normal;
+
+	display:inline-block;
+	height:30px;
+	width:50%;
+	border-radius:10px;
+}
